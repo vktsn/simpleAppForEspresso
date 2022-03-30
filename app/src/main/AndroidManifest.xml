@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ru.kkuzmichev.simpleappforespresso">
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion='28'
+    />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        />
 
     <application
         android:allowBackup="true"
@@ -8,7 +15,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SimpleAppForEspresso">
+        android:theme="@style/Theme.SimpleAppForEspresso"
+        android:requestLegacyExternalStorage="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"
