@@ -56,7 +56,7 @@ import io.qameta.allure.kotlin.Allure;
 public class ExampleInstrumentedTest {
 
     @Rule
-    public ActivityScenarioRule<MainActivity> mActivityTestRule = new ActivityScenarioRule<>(MainActivity.class);
+    public ActivityTestRule<MainActivity> activityTestRule = new ActivityTestRule<>(MainActivity.class);
 
     @Before
     public void registerIdlingResources() {
